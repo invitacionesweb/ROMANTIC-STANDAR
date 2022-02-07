@@ -36,6 +36,7 @@ header {
     justify-content: center;
     
 }
+
 .inicio {
     text-align: center;
     padding: 40px;
@@ -104,16 +105,25 @@ header p {
 }
 
 
+
+
+
 .info {
     width: 100%;
-    height: auto;
+    height: 100%;
     text-align: center;
     padding: 40px;
     position: relative;
+   
 }
+.info p {
+    font-size: 20px;
+
+}
+
 .info h2 {
     color: var(--color-secundario);
-    font-size: 48px;
+    font-size: 58px;
     padding: 10px;
 }
 
@@ -126,9 +136,31 @@ header p {
     align-items: center;
     justify-content: space-evenly;
     gap: 40px;
+   
 }
+.carduno {
+    position: relative;
+}
+
+.flor {
+    position: absolute;
+    width: 300px;
+    top: 140px;
+    right: 200px;
+}
+.carddos {
+    position: relative;
+}
+
+.carddos .flor {
+    position: absolute;
+    width: 300px;
+    top: -120px;
+    left: 200px;
+}
+
 .info-cards h2 {
-    font-size: 30px;
+    font-size: 40px;
     color: var(--color-terciario);
 
 }
@@ -182,7 +214,7 @@ header p {
     background-color: var(--color-terciario);
     width: 100%;
     height: 80vh;
-    padding: 40px;
+    padding: 50px;
     margin:auto;
     background-image: url(./background/background2.png);
     background-position: center;
@@ -200,36 +232,48 @@ header p {
 .rsvp-card h2 {
     color: var(--color-principal);
     padding: 0;
+    font-size: 40px;
+
 }
 .rsvp-card p{
     color: var(--color-principal);
-    padding: 4px 0;
+    padding: 4px 8px;
+    font-size: 20px;
+   
+
 }
 
 .regalos {
     width: 100%;
     height: 80vh;
     background-color: var(--color-secundario);
+    background-image: url(background/background3.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 
 }
 .regalos-card{
-    background-color: var(--color-secundario);
     width: 100%;
     height: 80vh;
     padding: 40px;
     margin:auto;
-    background-image: url(background/background2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     max-width: 520px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 60px;
+    padding-bottom: 120px;
     
+    
+}
+.regalos-card h2 {
+    color: var(--color-principal);
+    padding: 0;
+    font-size: 40px;
+
 }
 .regalos-card p {
     padding: 0;
@@ -283,6 +327,8 @@ button#copiador {
 }
 
 .end {
+    margin: auto;
+    max-width: 540px;
     text-align: center;
     padding: 40px 80px;
     color: var(--color-terciario);
