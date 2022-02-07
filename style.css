@@ -1,0 +1,340 @@
+:root {
+    --color-principal:#F6F3EF;
+    --color-secundario:#B68E87;
+    --color-terciario:#733C3F;
+    --font-principal:'Dawning of a New Day', cursive;
+    --font-secundaria:'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: var(--color-principal);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+
+}
+body p {
+    font-family: var(--font-secundaria);
+    padding: 0;
+
+}
+body h2 {
+    font-family: var(--font-principal);
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(background/background1.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.inicio {
+    text-align: center;
+    padding: 40px;
+}
+
+.boton {
+   border: 1px solid var(--color-secundario);
+   background-color: var(--color-secundario);
+   color: var(--color-principal);
+   padding: 10px 30PX;
+   text-decoration: none;
+}
+.boton:hover {
+    color: var(--color-secundario);
+    background-color: var(--color-principal);
+    border: 1px solid var(--color-secundario);
+    padding: 10px 30PX;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--color-terciario);
+    font-family: var(--font-principal);
+    font-size: 100px !important;
+    padding: 0;
+    margin: 0;
+}
+
+header p {
+    color: var(--color-terciario);
+    font-family: var(--font-secundaria);
+}
+
+.countdown {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    text-align: center;
+    padding: 20px 0;
+}
+.countdown p {
+    margin: 0;
+
+}
+
+/* IMAGEN UNO*/
+
+.lovestory {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lovestory-text {
+    padding: 60px 40px;
+}
+
+.lovestory-img {
+    width: 100%;
+    background-image: url(img/1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.info {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+.info h2 {
+    color: var(--color-secundario);
+    font-size: 48px;
+    padding: 10px;
+}
+
+.info .icono {
+    width: 40px;
+}
+.info-cards {
+    padding: 40px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.info-cards h2 {
+    font-size: 30px;
+    color: var(--color-terciario);
+
+}
+
+.info  .animado {
+    opacity: 0;
+    transition: all 3.5s;
+}
+/*ANIMACION*/
+.animarIzq{
+    animation: aparecerIzq 1s ease-out;
+  }
+  
+  @keyframes aparecerIzq{
+    from{
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .animarDer{
+    animation: aparecerDer 1s ease-out;
+  }
+  
+  @keyframes aparecerDer{
+    from{
+      opacity: 0;
+      transform: translateX(500px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+
+
+
+
+.rsvp {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color-terciario);
+
+}
+.rsvp-card{
+    background-color: var(--color-terciario);
+    width: 100%;
+    height: 80vh;
+    padding: 40px;
+    margin:auto;
+    background-image: url(./background/background2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 520px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    
+}
+.rsvp-card h2 {
+    color: var(--color-principal);
+    padding: 0;
+}
+.rsvp-card p{
+    color: var(--color-principal);
+    padding: 4px 0;
+}
+
+.regalos {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color-secundario);
+
+}
+.regalos-card{
+    background-color: var(--color-secundario);
+    width: 100%;
+    height: 80vh;
+    padding: 40px;
+    margin:auto;
+    background-image: url(background/background2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 520px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    
+}
+.regalos-card p {
+    padding: 0;
+    margin: 0;
+}
+
+#contenedor {
+    width: auto;
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor > div {
+    display: flex;
+}
+
+span#enlace {
+    color: var(--color-secundario);
+    font-size: 1em;
+    padding: 8px ;
+    text-align: center;
+    background-color: var(--color-principal);
+
+    border: 1px solid var(--color-secundario);
+    margin-top: 10px;
+
+}
+
+button#copiador {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 8px;    
+    font-size: 1em;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid var(--color-secundario);
+    margin-top: 10px;
+}
+
+.regalos-card h2 {
+    color: var(--color-principal);
+    padding: 0;
+}
+.regalos-card p{
+    color: var(--color-principal);
+    padding: 4px 0;
+}
+
+.end {
+    text-align: center;
+    padding: 40px 80px;
+    color: var(--color-terciario);
+}
+
+.end h2{
+    font-size: 60px;
+}
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    padding: 40px;
+}
+footer .contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.contenido a {
+    color: var(--color-principal);
+}
+.contenido a:hover {
+    color: var(--color-secundario);
+}
+
+
+
+
+
+@media (max-width: 660px) {
+    .lovestory {
+        grid-template-columns: 1fr;
+    }
+    .lovestory-img {
+        height: 50vh;
+    }
+    .info-cards {
+        flex-direction: column;
+        
+    
+    }
+}
