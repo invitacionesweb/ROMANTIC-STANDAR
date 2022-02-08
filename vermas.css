@@ -105,6 +105,10 @@ footer .contenido{
         font-size: 30px !important;
         
     }
+    main {
+        height: auto;
+        
+    }
     
 
 }

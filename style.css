@@ -105,24 +105,29 @@ header p {
 }
 
 
-
-
-
 .info {
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: 40px;
-    position: relative;
-   
+    padding: 40px; 
+    background-image: url(./background/grupo23.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .info p {
     font-size: 20px;
 
 }
+.animado {
+    width: 380px;
+    background-color: var(--color-principal);
+    padding: 40px;
+    border-radius: 25px;
+}
 
 .info h2 {
-    color: var(--color-secundario);
+    color: #000000;
     font-size: 58px;
     padding: 10px;
 }
@@ -138,70 +143,13 @@ header p {
     gap: 40px;
    
 }
-.carduno {
-    position: relative;
-}
 
-.flor {
-    position: absolute;
-    width: 300px;
-    top: 140px;
-    right: 200px;
-}
-.carddos {
-    position: relative;
-}
-
-.carddos .flor {
-    position: absolute;
-    width: 300px;
-    top: -120px;
-    left: 200px;
-}
 
 .info-cards h2 {
     font-size: 40px;
     color: var(--color-terciario);
 
 }
-
-.info  .animado {
-    opacity: 0;
-    transition: all 3.5s;
-}
-/*ANIMACION*/
-.animarIzq{
-    animation: aparecerIzq 1s ease-out;
-  }
-  
-  @keyframes aparecerIzq{
-    from{
-      opacity: 0;
-      transform: translateX(-500px);
-    }
-    to{
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-  
-  .animarDer{
-    animation: aparecerDer 1s ease-out;
-  }
-  
-  @keyframes aparecerDer{
-    from{
-      opacity: 0;
-      transform: translateX(500px);
-    }
-    to{
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-
-
-
 
 
 .rsvp {
@@ -227,7 +175,9 @@ header p {
     align-items: center;
     justify-content: center;
     padding-top: 100px;
-    
+}
+.rsvp-text {
+    max-width: 280px;
 }
 .rsvp-card h2 {
     color: var(--color-principal);
