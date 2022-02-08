@@ -40,7 +40,19 @@ header {
 .inicio {
     text-align: center;
     padding: 40px;
+    animation-name: texto;
+    animation-duration: 5s;
+
+
+}@keyframes texto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
+
 
 .boton {
    border: 1px solid var(--color-secundario);
@@ -120,7 +132,7 @@ header p {
 
 }
 .animado {
-    width: 380px;
+    width: 340px;
     background-color: var(--color-principal);
     padding: 40px;
     border-radius: 25px;
@@ -177,7 +189,10 @@ header p {
     padding-top: 100px;
 }
 .rsvp-text {
-    max-width: 280px;
+    max-width: 240px;
+    gap: 0;
+    padding: 0;
+    margin: 0;
 }
 .rsvp-card h2 {
     color: var(--color-principal);
@@ -193,6 +208,7 @@ header p {
 
 }
 
+
 .regalos {
     width: 100%;
     height: 80vh;
@@ -203,6 +219,9 @@ header p {
     background-repeat: no-repeat;
     
 
+}
+.regalos .icono {
+    width: 80px;
 }
 .regalos-card{
     width: 100%;
