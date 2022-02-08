@@ -27,12 +27,13 @@ body h2 {
 header {
     width: 100%;
     height: 100vh;
+
     background-image: url(background/background1.png);
     background-position: top;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     
 }
@@ -73,7 +74,7 @@ header {
 h1 {
     color: var(--color-terciario);
     font-family: var(--font-principal);
-    font-size: 100px !important;
+    font-size: 80px !important;
     padding: 0;
     margin: 0;
 }
@@ -202,8 +203,9 @@ header p {
 }
 .rsvp-card p{
     color: var(--color-principal);
-    padding: 4px 8px;
+    padding: 0px 8px;
     font-size: 20px;
+    margin: 0;
    
 
 }
@@ -215,13 +217,12 @@ header p {
     background-color: var(--color-secundario);
     background-image: url(background/background3.png);
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    
-
 }
+
 .regalos .icono {
-    width: 80px;
+    width: 50px;
 }
 .regalos-card{
     width: 100%;
@@ -247,6 +248,9 @@ header p {
 .regalos-card p {
     padding: 0;
     margin: 0;
+    font-size: 20px;
+
+    
 }
 
 #contenedor {
@@ -293,6 +297,8 @@ button#copiador {
 .regalos-card p{
     color: var(--color-principal);
     padding: 4px 0;
+    font-size: 20px;
+
 }
 
 .end {
@@ -321,6 +327,7 @@ footer .contenido{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .contenido ul {
     display: flex;
